@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css')}}">
+    <title>welcome to aidDev</title>
+</head>
+<body>
+    <header class="navigation">
+        <nav class="nav_item">Guide</nav>        
+        <nav class="nav_item">References</nav>
+    </header>
+    <section class="introduction">
+        <section class="introductory_image">
+            <figure id="landing_image">
+                <img src="{{ url_for('static', filename='images/introductory_image.jpg') }}" alt="An introductory image">
+                <p> <a href="https://mattbango.photo/">photo credit: By Matt Bango</a></p>
+            </figure>
+        </section>
+        <h1 class="description">welcome to aidDev</h1>
+        <p class="description">An open source portfolio project that recommends educational materials to aspiring software developers.</p>
+        <p>Learning is a journey, we aid you in your journey.</p>
+        <p>Remember <q>Progress over perfection</q></p>
+        <p><a href="" class="button" id="project_link">What are we learning today?</a></p>
+    </section>
+    <section class="features">
+        <div class="book">
+            <figure>
+                <figcaption>We recommend books</figcaption>
+                <img src="{{url_for('static', filename='images/book_image.jpg')}}" alt="An image of a book collection" width="50%" height="100%">
+                <p><a href="https://www.freepik.com/free-vector/realistic-book-lover-composition-with-stack-colorful-books-with-eyeglasses-home-plants-tea-cup-vector-illustration_33771325.htm#query=book%20gif&position=0&from_view=keyword&track=ais&uuid=5756771d-6c4a-4aad-9a8a-1e3feedafae5">photo credit: Image by macrovector</a> on Freepik</p>
+            </figure>
+        </div>
+        <div class="video">
+            <figure>
+                <figcaption>If you prefer videos, we also recommend video contents</figcaption>
+                <img src="{{ url_for('static', filename='images/video.online_education.jpg')}}" alt="An image of online tutorial" width="50%" height="100%">
+                <p><a href="https://www.freepik.com/free-vector/online-education-cartoon-concept-with-computer-monitor-books-vector-illustration_63439062.htm#query=video%20library&position=10&from_view=search&track=ais&uuid=c4ac2404-af67-492f-be1f-770f17e47deb">photo credit: Image by macrovector</a> on Freepik</p>
+            </figure>
+        </div>
+    </section>
+    <footer class="about_us">
+        <div>
+            <a href="" class="button">Our story</a>
+        </div>
+        <div>
+            <a href="" class="button">authors</a>
+        </div>
+        <div>
+            <a href="" class="button">repository</a>
+        </div>
+    </footer>
+</body>
+</html>
